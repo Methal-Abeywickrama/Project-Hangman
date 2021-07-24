@@ -63,7 +63,7 @@ class Hangman
   end
 end
 
-unless YAML.load(File.read('save.dump')).nil?
+begin YAML.load(File.read('save.dump')).nil?
   puts "Would you like to continue where you left off?(y/n)"
   response = gets.chomp.downcase
   if response == 'y'
@@ -71,7 +71,7 @@ unless YAML.load(File.read('save.dump')).nil?
   else
     hangman = Hangman.new
   end
-else
+rescue
   puts "Hello, Let's play a game of hangman"
   hangman = Hangman.new
 end
