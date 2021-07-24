@@ -1,0 +1,33 @@
+--- !ruby/object:Hangman
+code:
+- "*"
+- "*"
+- "*"
+- d
+- "*"
+- "*"
+- g
+- "*"
+- "*"
+master:
+- h
+- e
+- i
+- d
+- e
+- g
+- g
+- e
+- r
+attempts: 1
+display:
+- h
+- e
+- i
+- _
+- e
+- g
+- _
+- e
+- r
+won: false
